@@ -1,0 +1,3 @@
+[submodule "TricksterEngine/vendor/spdlog"]
+	path = TricksterEngine/vendor/spdlog
+	url = https://github.com/gabime/spdlog
