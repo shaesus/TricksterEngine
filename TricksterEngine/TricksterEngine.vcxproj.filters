@@ -27,9 +27,15 @@
     <ClInclude Include="src\Trickster\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Trickster\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Trickster\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Trickster\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
