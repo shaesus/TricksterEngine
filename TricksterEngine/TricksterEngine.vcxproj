@@ -79,7 +79,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>TS_PLATFORM_WINDOWS;TS_BUILD_DLL;TS_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -146,6 +146,10 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Trickster\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Trickster\Events\Event.h" />
+    <ClInclude Include="src\Trickster\Events\KeyEvent.h" />
+    <ClInclude Include="src\Trickster\Events\MouseEvent.h" />
     <ClInclude Include="src\Trickster.h" />
     <ClInclude Include="src\Trickster\Application.h" />
     <ClInclude Include="src\Trickster\Core.h" />

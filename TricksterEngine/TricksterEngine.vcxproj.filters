@@ -19,6 +19,10 @@
     <ClInclude Include="src\Trickster\Log.h">
       <Filter>Trickster</Filter>
     </ClInclude>
+    <ClInclude Include="src\Trickster\Events\Event.h" />
+    <ClInclude Include="src\Trickster\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Trickster\Events\KeyEvent.h" />
+    <ClInclude Include="src\Trickster\Events\MouseEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Trickster\Application.cpp">
