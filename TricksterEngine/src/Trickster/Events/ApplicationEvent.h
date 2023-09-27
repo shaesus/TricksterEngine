@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Trickster
 {
 	class TRICKSTER_API WindowResizeEvent : public Event

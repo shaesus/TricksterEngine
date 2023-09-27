@@ -4,6 +4,9 @@
     <Filter Include="Trickster">
       <UniqueIdentifier>{0055A5E1-6CBF-5958-B5FD-0AFE21A737AD}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Trickster\Events">
+      <UniqueIdentifier>{E460299D-D059-48EF-F98B-2D74E5E327FB}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Trickster.h" />
@@ -16,13 +19,22 @@
     <ClInclude Include="src\Trickster\EntryPoint.h">
       <Filter>Trickster</Filter>
     </ClInclude>
+    <ClInclude Include="src\Trickster\Events\ApplicationEvent.h">
+      <Filter>Trickster\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trickster\Events\Event.h">
+      <Filter>Trickster\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trickster\Events\KeyEvent.h">
+      <Filter>Trickster\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trickster\Events\MouseEvent.h">
+      <Filter>Trickster\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Trickster\Log.h">
       <Filter>Trickster</Filter>
     </ClInclude>
-    <ClInclude Include="src\Trickster\Events\Event.h" />
-    <ClInclude Include="src\Trickster\Events\ApplicationEvent.h" />
-    <ClInclude Include="src\Trickster\Events\KeyEvent.h" />
-    <ClInclude Include="src\Trickster\Events\MouseEvent.h" />
+    <ClInclude Include="src\tspch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Trickster\Application.cpp">
@@ -31,5 +43,6 @@
     <ClCompile Include="src\Trickster\Log.cpp">
       <Filter>Trickster</Filter>
     </ClCompile>
+    <ClCompile Include="src\tspch.cpp" />
   </ItemGroup>
 </Project>

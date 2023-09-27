@@ -1,3 +1,4 @@
+#include "tspch.h"
 #include "Application.h"
 
 #include "Trickster/Events/ApplicationEvent.h"

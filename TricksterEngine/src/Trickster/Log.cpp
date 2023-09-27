@@ -1,3 +1,4 @@
+#include "tspch.h"
 #include "Log.h"
 
 namespace Trickster {

@@ -18,6 +18,9 @@ project "TricksterEngine"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "tspch.h"
+	pchsource "TricksterEngine/src/tspch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",
@@ -26,8 +29,8 @@ project "TricksterEngine"
 
 	includedirs
 	{
-		"%{prj.name}/src"
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/src",
+		"%{prj.name}/vendor/spdlog/include",
 	}
 
 	filter "system:windows"

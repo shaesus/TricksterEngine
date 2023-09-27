@@ -2,9 +2,6 @@
 
 #include "Trickster/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Trickster
 {
 	enum class EventType
