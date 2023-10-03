@@ -12,6 +12,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Trickster/Log.h"
 
 #ifdef TS_PLATFORM_WINDOWS
 	#include <Windows.h>

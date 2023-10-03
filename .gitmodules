@@ -1,3 +1,6 @@
 [submodule "TricksterEngine/vendor/spdlog"]
 	path = TricksterEngine/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "TricksterEngine/vendor/GLFW"]
+	path = TricksterEngine/vendor/GLFW
+	url = https://github.com/shaesus/glfw

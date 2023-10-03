@@ -1,5 +1,6 @@
 #pragma once
 
+#include "tspch.h"
 #include "Trickster/Core.h"
 
 namespace Trickster

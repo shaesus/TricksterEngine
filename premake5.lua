@@ -10,6 +10,12 @@ workspace "TricksterEngine"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (source directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "TricksterEngine/vendor/GLFW/include"
+
+include "TricksterEngine/vendor/GLFW"
+
 project "TricksterEngine"
 	location "TricksterEngine"
 	kind "SharedLib"
@@ -31,6 +37,13 @@ project "TricksterEngine"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}",
+	}
+
+	links 
+	{
+		"GLFW",
+		"opengl32.lib",
 	}
 
 	filter "system:windows"
