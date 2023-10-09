@@ -13,8 +13,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (source directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "TricksterEngine/vendor/GLFW/include"
+IncludeDir["Glad"] = "TricksterEngine/vendor/Glad/include"
 
 include "TricksterEngine/vendor/GLFW"
+include "TricksterEngine/vendor/Glad"
 
 project "TricksterEngine"
 	location "TricksterEngine"
@@ -38,11 +40,13 @@ project "TricksterEngine"
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links 
 	{
 		"GLFW",
+		"Glad",
 		"opengl32.lib",
 	}
 
@@ -55,6 +59,7 @@ project "TricksterEngine"
 		{
 			"TS_PLATFORM_WINDOWS",
 			"TS_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands
