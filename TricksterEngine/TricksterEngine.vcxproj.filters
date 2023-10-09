@@ -40,6 +40,12 @@
     <ClInclude Include="src\Trickster\Events\MouseEvent.h">
       <Filter>Trickster\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Trickster\Layer.h">
+      <Filter>Trickster</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trickster\LayerStack.h">
+      <Filter>Trickster</Filter>
+    </ClInclude>
     <ClInclude Include="src\Trickster\Log.h">
       <Filter>Trickster</Filter>
     </ClInclude>
@@ -53,6 +59,12 @@
       <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\Trickster\Application.cpp">
+      <Filter>Trickster</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Trickster\Layer.cpp">
+      <Filter>Trickster</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Trickster\LayerStack.cpp">
       <Filter>Trickster</Filter>
     </ClCompile>
     <ClCompile Include="src\Trickster\Log.cpp">
